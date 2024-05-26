@@ -22,11 +22,7 @@ def clear_directory(directory_path):
         if os.path.isfile(full_path):
             # Remove the file
             os.remove(full_path)
-        elif os.path.isdir(full_path):
-            # Recursively clear subdirectories
-            clear_directory(full_path)
-            # Remove the empty directory
-            os.rmdir(full_path)
+
 
 
 def do_tweet():
