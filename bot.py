@@ -5,8 +5,11 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 
-load_dotenv('/home/shiva/my_work/social_media/twitter_bot/.env')
-os.chdir("/home/shiva/my_work/social_media/twitter_bot")
+try:
+    load_dotenv('/home/shiva/my_work/social_media/twitter_bot/.env')
+    os.chdir("/home/shiva/my_work/social_media/twitter_bot")
+except:
+    pass
 date = datetime.today().date()
 
 
