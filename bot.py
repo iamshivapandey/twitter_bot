@@ -134,5 +134,6 @@ def bot():
 
     return {"success": 200}
 
-print(bot())
+if __name__ == "__main__":
+    print(bot())
     
