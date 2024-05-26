@@ -24,10 +24,10 @@ jobs:
           
       - name: execute py script # run bot.py
         env:
-          api_key: ${{ secrets.api_key }}
-          api_secret: ${{ secrets.api_secret }}
-          bearer_token: ${{ secrets.bearer_token }}
-          access_token: ${{ secrets.access_token }}
-          access_token_secret: ${{ secrets.access_token_secret }}
+          api_key: ${{ secrets.API_KEY }}
+          api_secret: ${{ secrets.API_SECRET }}
+          bearer_token: ${{ secrets.BEARER_TOKEN }}
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+          access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
 
         run: python bot.py
