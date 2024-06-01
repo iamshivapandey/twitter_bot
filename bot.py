@@ -78,7 +78,7 @@ def do_tweet():
     Post3️⃣ = Top Trending Crypto🚀
     Post4️⃣ = Gainers📈 & Losers📉
 
-#Bitcoin #Ethereum #CryptoCurrencies #trendingcryptos #investing #invest'''
+#BTC #Ethereum #CryptoCurrency #trendingcryptos #investing @elonmusk'''
 
         tweet = client.create_tweet(text=tweet_text, media_ids=media_ids)
 
@@ -86,7 +86,7 @@ def do_tweet():
 
         return True
     except Exception as e:
-        print("---------------->>>",e)
+        print("------------------------->>>",e)
         return False
 
 
